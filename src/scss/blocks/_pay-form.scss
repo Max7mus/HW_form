@@ -1,0 +1,127 @@
+.payment{
+    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 335px;
+    background-color: rgb(240, 240, 68);
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+&__head{
+    color: gray;
+    font-size: 14px;
+}
+
+&__price{
+    font-size: 40px;
+    color: gray;
+    padding-left: 70px;
+}
+
+}
+
+.form-holder{
+    max-width: 335px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pay-form{
+    padding: 80px 25px 0;
+    background-color: #fff;
+
+&__input-holder{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+    justify-content: space-between;
+}
+
+&__label{
+    color: gray;
+    margin: 0 0 10px;
+    display: block;
+    width: 100%;
+}
+
+&__input{
+    position: relative;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 0;
+    height: 45px;
+    padding: 10px 7px;
+    width: 100%;
+
+    &_cvv{
+        max-width: 95px;
+    }
+
+
+&:focus{
+    border-color: #4646ac;
+    }
+}
+
+&__select-holder{
+    position: relative;
+    width: 100%;
+
+    &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    border: 10px solid transparent;
+    border-top: 12px solid #babacd;
+    transform: translateY(-18%);
+    }
+
+    &_month{
+        max-width: 175px
+    }
+    
+    &_year{
+        max-width: 95px;
+    }
+}
+
+&__select{
+    @extend .pay-form__input;
+    
+}
+
+&__cvv-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+&__cvv-description{
+    font-size: 14px;
+    color: gray;
+
+    a{
+        color: inherit;
+        transition: color ease-in-out 0.3s;
+
+        &:hover{
+            color: #babacd;
+        }
+    }
+
+}
+}

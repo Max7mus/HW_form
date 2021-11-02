@@ -1,0 +1,15 @@
+.payment {
+  padding: 100px 0;
+  background-color: gray;
+}
+
+.form-holder {
+  max-width: 335px;
+  width: 100%;
+  margin: 0;
+}
+
+.pay-form {
+  padding: 45px 25px 0;
+  background-color: #fff;
+}
